@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Time Café: A wellness space with unique relaxation zones, healthy snacks, and engaging activities. View our seating, café layout, and activities.">
+    <title>Time Café - Where Wellness Meets Community</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer, section {
+            padding: 20px;
+            text-align: center;
+        }
+        .hero-section {
+            background: url('./backgroung.jpeg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            z-index: 1000;
+        }
+        .sticky-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sticky-nav ul li {
+            margin: 0 10px;
+        }
+        .sticky-nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s;
+        }
+        .sticky-nav ul li a:hover {
+            background: #555;
+        }
+        .gallery-link-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery-link-container a {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .gallery-link-container a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-link-container a:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .seating-gallery {
+    display: flex;
+    gap: 20px; /* Space between images */
+    justify-content: center;
+}
+
+.seating-gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Ensures images are cropped to fit the dimensions */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Welcome to Time Café</h1>
+        <p>Your ultimate destination for relaxation, wellness, and community. Explore our cozy spaces and exciting activities!</p>
+    </header>
+
+    <!-- Sticky Navigation Menu -->
+    <nav class="sticky-nav">
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#seating">Seating</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2>Discover Our Features</h2>
+            <p>Time Café is designed to promote mental wellness, productivity, and meaningful connections. Here’s what we offer:</p>
+            <div class="features-container">
+                <div class="feature-item">
+                    <h3>Relaxation Zones</h3>
+                    <p>Experience ergonomic seating, ambient lighting, and noise-cancellation features.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Healthy Snacks</h3>
+                    <p>Enjoy a selection of organic, nutritious snacks and beverages crafted to energize and delight.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Interactive Mobile App</h3>
+                    <p>Book your seat, participate in wellness challenges, and track rewards with our user-friendly app.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seating Arrangement Section -->
+        <section id="seating" class="seating-section">
+            <h2>Seating Arrangements</h2>
+            <p>Explore the variety of seating options available at Time Café, designed for comfort and functionality.</p>
+            <div class="seating-gallery">
+                <img src="interior2.jpg" alt="Seating Arrangement - Overhead View" class="responsive-img">
+                <img src="interior.jpg" alt="Café Interior - Relaxation Zones" class="responsive-img">
+            </div>
+        </section>
+
+        <!-- Gallery Section with Links -->
+        <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <p>Check out our highlights! Click to explore:</p>
+            <div class="gallery-link-container">
+                <a href="https://via.placeholder.com/600" target="_blank">
+                    <img src="interior1.jpg" alt="Gallery Image 1">
+                </a>
+                <a href="https://via.placeholder.com/600" target="_blank">
+                    <img src="front.jpeg" alt="Gallery Image 2">
+                </a>
+                <a href="https://via.placeholder.com/600" target="_blank">
+                    <img src="image1.jpeg" alt="Gallery Image 3">
+                </a>
+                <a href="https://via.placeholder.com/600" target="_blank">
+                    <img src="download.jpeg" alt="Gallery Image 4">
+                </a>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities-section">
+            <h2>Activities We Offer</h2>
+            <p>Engage in activities that promote wellness and creativity:</p>
+            <ul>
+                <li>Yoga and meditation sessions</li>
+                <li>Community art and painting workshops</li>
+                <li>Board game nights and trivia events</li>
+                <li>Wellness talks and guest lectures</li>
+            </ul>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What are the operating hours of Time Café?</summary>
+                <p>We are open daily from 8:00 AM to 10:00 PM.</p>
+            </details>
+            <details>
+                <summary>Is the mobile app free?</summary>
+                <p>The app is included with any membership or can be accessed for $5/month.</p>
+            </details>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <h2>Affordable Pricing Plans</h2>
+            <div class="pricing-container">
+                <div class="pricing-item">
+                    <h3>Day Pass</h3>
+                    <p>Perfect for a one-time visit.</p>
+                    <strong>$10/day</strong>
+                </div>
+                <div class="pricing-item">
+                    <h3>Monthly Membership</h3>
+                    <p>Unlimited access to all facilities and events.</p>
+                    <strong>$50/month</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Send us a message or drop by for a visit.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Time Café. All rights reserved. | Follow us on <a href="https://instagram.com" target="_blank">Instagram</a> and <a href="https://facebook.com" target="_blank">Facebook</a></p>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+</body>
+</html>
